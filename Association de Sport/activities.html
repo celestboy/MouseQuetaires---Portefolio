@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités - Club Sportif Dynamique</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <svg style="width:30px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" fill="#2563EB" />
+                        <circle cx="100" cy="100" r="85" fill="white" />
+                        <circle cx="100" cy="100" r="80" fill="#2563EB" />
+                        <path d="M100 40 L115 85 L160 85 L125 115 L140 160 L100 130 L60 160 L75 115 L40 85 L85 85 Z" fill="white" />
+                        <circle cx="100" cy="100" r="15" fill="white" />
+                    </svg>
+                    <span class="ml-3 text-xl font-bold">Phoenix Sports Club</span>
+                </div>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition-colors">Accueil</a>
+                    <a href="activities.html" class="hover:text-blue-200 transition-colors">Activités</a>
+                    <a href="planning.html" class="hover:text-blue-200 transition-colors">Planning</a>
+                    <a href="teams.html" class="hover:text-blue-200 transition-colors">Équipes</a>
+                    <a href="news.html" class="hover:text-blue-200 transition-colors">Actualités</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+
+                <button class="md:hidden mobile-menu-button focus:outline-none" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="hamburger" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu md:hidden hidden">
+                <div class="py-4 space-y-3">
+                    <a href="index.html" class="block py-2 hover:text-blue-200 transition-colors">Accueil</a>
+                    <a href="activities.html" class="block py-2 hover:text-blue-200 transition-colors">Activités</a>
+                    <a href="planning.html" class="block py-2 hover:text-blue-200 transition-colors">Planning</a>
+                    <a href="teams.html" class="block py-2 hover:text-blue-200 transition-colors">Équipes</a>
+                    <a href="news.html" class="block py-2 hover:text-blue-200 transition-colors">Actualités</a>
+                    <a href="contact.html" class="block py-2 hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- En-tête de la page -->
+    <header class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Nos Activités Sportives</h1>
+            <p class="text-xl">Découvrez l'ensemble des sports et activités proposés par notre club</p>
+        </div>
+    </header>
+
+    <!-- Section Sports Collectifs -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Sports Collectifs</h2>
+            
+            <!-- Football -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="images/football.jpg" alt="Football" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-4">Football</h3>
+                        <p class="text-gray-600 mb-6">Notre section football accueille les joueurs de tous niveaux, des débutants aux confirmés. Nos entraîneurs qualifiés vous accompagnent dans votre progression.</p>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold">Catégories :</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>U8-U9 (6-7 ans)</li>
+                                <li>U10-U11 (8-9 ans)</li>
+                                <li>U12-U13 (10-11 ans)</li>
+                                <li>U14-U15 (12-13 ans)</li>
+                                <li>Seniors (18+ ans)</li>
+                            </ul>
+                            <div class="mt-6">
+                                <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Basketball -->
+            <div class="mb-16 bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2">
+                        <img src="images/basketball.jpg" alt="Basketball" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-4">Basketball</h3>
+                        <p class="text-gray-600 mb-6">Notre section basketball propose des entraînements adaptés à tous les niveaux, avec une approche pédagogique moderne et dynamique.</p>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold">Catégories :</h4>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Mini-basket (6-11 ans)</li>
+                                <li>U13 (11-12 ans)</li>
+                                <li>U15 (13-14 ans)</li>
+                                <li>U17 (15-16 ans)</li>
+                                <li>Seniors (17+ ans)</li>
+                            </ul>
+                            <div class="mt-6">
+                                <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Athlétisme -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Athlétisme</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Course -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/athletics.jpg" alt="Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Course</h3>
+                        <p class="text-gray-600 mb-4">Sprint, demi-fond, fond, notre section course vous accompagne dans votre discipline de prédilection.</p>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li>• Séances techniques</li>
+                            <li>• Préparation physique</li>
+                            <li>• Compétitions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sauts -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/athletics_jumping.png" alt="Sauts" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Sauts</h3>
+                        <p class="text-gray-600 mb-4">Hauteur, longueur, triple saut, perche : développez vos capacités avec nos experts.</p>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li>• Initiation</li>
+                            <li>• Perfectionnement</li>
+                            <li>• Entraînement spécifique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lancers -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/athletics_throwing.jpg"Lancers" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Lancers</h3>
+                        <p class="text-gray-600 mb-4">Poids, disque, javelot, marteau : découvrez toutes les disciplines de lancer.</p>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li>• Apprentissage technique</li>
+                            <li>• Musculation adaptée</li>
+                            <li>• Suivi personnalisé</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Horaires et Tarifs -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Horaires et Tarifs</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Horaires -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold mb-6">Horaires d'entraînement</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Football</h4>
+                            <p>Lundi et Mercredi : 17h-19h (Jeunes)</p>
+                            <p>Mardi et Jeudi : 19h30-21h30 (Seniors)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Basketball</h4>
+                            <p>Mardi et Jeudi : 17h-19h (Jeunes)</p>
+                            <p>Lundi et Mercredi : 19h30-21h30 (Seniors)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Athlétisme</h4>
+                            <p>Mercredi : 14h-16h (École d'athlétisme)</p>
+                            <p>Samedi : 10h-12h (Tous niveaux)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarifs -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold mb-6">Tarifs annuels</h3>
+                    <div class="space-y-4">
+                        <div class="border-b pb-4">
+                            <h4 class="font-semibold text-blue-600">Football</h4>
+                            <p>Jeunes (U8-U15) : 180€</p>
+                            <p>Seniors : 220€</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <h4 class="font-semibold text-blue-600">Basketball</h4>
+                            <p>Mini-basket : 160€</p>
+                            <p>U13-U17 : 180€</p>
+                            <p>Seniors : 200€</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-600">Athlétisme</h4>
+                            <p>École d'athlétisme : 150€</p>
+                            <p>Adolescents : 170€</p>
+                            <p>Adultes : 190€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Inscription -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à nous rejoindre ?</h2>
+            <p class="text-xl mb-8">Inscrivez-vous dès maintenant et commencez votre aventure sportive !</p>
+            <div class="space-x-4">
+                <a href="#" class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 font-semibold">S'inscrire</a>
+                <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-semibold">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg style="width:30px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="90" fill="#2563EB" />
+                            <circle cx="100" cy="100" r="85" fill="white" />
+                            <circle cx="100" cy="100" r="80" fill="#2563EB" />
+                            
+                            <path d="M100 40 L115 85 L160 85 L125 115 L140 160 L100 130 L60 160 L75 115 L40 85 L85 85 Z" fill="white" />
+                            
+                            <circle cx="100" cy="100" r="15" fill="white" />
+                        </svg>
+                        Phoenix Sports Club
+                    </h3>
+                    <p class="text-gray-400">Rejoignez notre communauté sportive et vivez votre passion du sport dans un cadre convivial et dynamique.</p>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="space-y-2">
+                            <a href="index.html" class="block text-gray-400 hover:text-white">Accueil</a>
+                            <a href="activities.html" class="block text-gray-400 hover:text-white">Activités</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="planning.html" class="block text-gray-400 hover:text-white">Planning</a>
+                            <a href="teams.html" class="block text-gray-400 hover:text-white">Équipes</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="news.html" class="block text-gray-400 hover:text-white">Actualités</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Phoenix Sports Club. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

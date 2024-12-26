@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipes - Club Sportif Dynamique</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <svg style="width:30px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" fill="#2563EB" />
+                        <circle cx="100" cy="100" r="85" fill="white" />
+                        <circle cx="100" cy="100" r="80" fill="#2563EB" />
+                        <path d="M100 40 L115 85 L160 85 L125 115 L140 160 L100 130 L60 160 L75 115 L40 85 L85 85 Z" fill="white" />
+                        <circle cx="100" cy="100" r="15" fill="white" />
+                    </svg>
+                    <span class="ml-3 text-xl font-bold">Phoenix Sports Club</span>
+                </div>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition-colors">Accueil</a>
+                    <a href="activities.html" class="hover:text-blue-200 transition-colors">Activités</a>
+                    <a href="planning.html" class="hover:text-blue-200 transition-colors">Planning</a>
+                    <a href="teams.html" class="hover:text-blue-200 transition-colors">Équipes</a>
+                    <a href="news.html" class="hover:text-blue-200 transition-colors">Actualités</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+
+                <button class="md:hidden mobile-menu-button focus:outline-none" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="hamburger" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu md:hidden hidden">
+                <div class="py-4 space-y-3">
+                    <a href="index.html" class="block py-2 hover:text-blue-200 transition-colors">Accueil</a>
+                    <a href="activities.html" class="block py-2 hover:text-blue-200 transition-colors">Activités</a>
+                    <a href="planning.html" class="block py-2 hover:text-blue-200 transition-colors">Planning</a>
+                    <a href="teams.html" class="block py-2 hover:text-blue-200 transition-colors">Équipes</a>
+                    <a href="news.html" class="block py-2 hover:text-blue-200 transition-colors">Actualités</a>
+                    <a href="contact.html" class="block py-2 hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Nos Équipes</h1>
+            <p class="text-xl">Découvrez nos équipes et leurs performances</p>
+        </div>
+    </header>
+
+    <section class="py-8 bg-white shadow">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap gap-4 items-center justify-center">
+                <button class="px-6 py-2 bg-blue-600 text-white rounded-full">Toutes les équipes</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Football</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Basketball</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Athlétisme</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Équipes Phares</h2>
+            
+            <div class="mb-12 bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="images/football_seniors.jpg" alt="Équipe Football Senior" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold">Équipe Senior Football</h3>
+                            <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Régional 1</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">2e</div>
+                                <div class="text-sm text-gray-600">Classement</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">15</div>
+                                <div class="text-sm text-gray-600">Victoires</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">45</div>
+                                <div class="text-sm text-gray-600">Buts marqués</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">L'équipe fanion du club évolue en Régional 1. Après une excellente saison dernière, l'équipe vise la montée en National 3.</p>
+                        <div>
+                            <h4 class="font-semibold mb-2">Staff technique :</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>• Entraîneur principal : Jean Dupont</li>
+                                <li>• Préparateur physique : Pierre Martin</li>
+                                <li>• Entraîneur gardiens : Paul Durand</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2">
+                        <img src="images/basketball_seniors.jpg" alt="Équipe Basketball Senior" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold">Équipe Senior Basketball</h3>
+                            <span class="ml-4 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Pré-National</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">1er</div>
+                                <div class="text-sm text-gray-600">Classement</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">18</div>
+                                <div class="text-sm text-gray-600">Victoires</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">1250</div>
+                                <div class="text-sm text-gray-600">Points marqués</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Notre équipe première de basketball domine actuellement le championnat Pré-National avec l'objectif de monter en Nationale 3.</p>
+                        <div>
+                            <h4 class="font-semibold mb-2">Staff technique :</h4>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>• Coach : Marie Lambert</li>
+                                <li>• Assistant coach : Lucas Bernard</li>
+                                <li>• Préparateur physique : Sarah Cohen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Formation et Jeunes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- U15 Football -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <img src="images/football_U15.jpg" alt="U15 Football" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">U15 Football</h3>
+                    <span class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm mb-4">Régional 2</span>
+                    <p class="text-gray-600 mb-4">Une génération prometteuse qui évolue au plus haut niveau régional.</p>
+                    <div class="space-y-2 text-gray-600">
+                        <div>Entraîneur : Michel Petit</div>
+                        <div>Effectif : 18 joueurs</div>
+                        <div>Entraînements : 3x/semaine</div>
+                    </div>
+                </div>
+
+                <!-- U17 Basketball -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <img src="images/basketball_U17.jpg" alt="U17 Basketball" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">U17 Basketball</h3>
+                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm mb-4">Elite Régionale</span>
+                    <p class="text-gray-600 mb-4">Une équipe talentueuse qui représente l'avenir du club.</p>
+                    <div class="space-y-2 text-gray-600">
+                        <div>Coach : Antoine Dubois</div>
+                        <div>Effectif : 12 joueurs</div>
+                        <div>Entraînements : 4x/semaine</div>
+                    </div>
+                </div>
+
+                <!-- École d'Athlétisme -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <img src="images/athletics_school.webp" alt="École Athlétisme" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">École d'Athlétisme</h3>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm mb-4">Formation</span>
+                    <p class="text-gray-600 mb-4">Notre centre de formation en athlétisme accueille les futures stars.</p>
+                    <div class="space-y-2 text-gray-600">
+                        <div>Responsable : Julie Martin</div>
+                        <div>Effectif : 45 athlètes</div>
+                        <div>Entraînements : 2-3x/semaine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Palmarès du Club</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-yellow-400">
+                    <h3 class="text-xl font-bold mb-4">Football</h3>
+                    <ul class="space-y-2">
+                        <li>🏆 Champion Régional 2023</li>
+                        <li>🏆 Coupe Régionale 2022</li>
+                        <li>🥈 Vice-champion Régional 2021</li>
+                        <li>🏆 Meilleure école de foot 2020</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-400">
+                    <h3 class="text-xl font-bold mb-4">Basketball</h3>
+                    <ul class="space-y-2">
+                        <li>🏆 Champion Pré-National 2023</li>
+                        <li>🏆 Coupe Départementale 2022</li>
+                        <li>🥇 Champion U17 Région 2021</li>
+                        <li>🏅 Label Club Formateur 2020</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-400">
+                    <h3 class="text-xl font-bold mb-4">Athlétisme</h3>
+                    <ul class="space-y-2">
+                        <li>🥇 3 titres régionaux 2023</li>
+                        <li>🏃‍♂️ 2 qualifiés France 2022</li>
+                        <li>🥈 Vice-champion interclubs 2021</li>
+                        <li>🌟 École d'athlé 3 étoiles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg style="width:30px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="90" fill="#2563EB" />
+                            <circle cx="100" cy="100" r="85" fill="white" />
+                            <circle cx="100" cy="100" r="80" fill="#2563EB" />
+                            
+                            <path d="M100 40 L115 85 L160 85 L125 115 L140 160 L100 130 L60 160 L75 115 L40 85 L85 85 Z" fill="white" />
+                            
+                            <circle cx="100" cy="100" r="15" fill="white" />
+                        </svg>
+                        Phoenix Sports Club
+                    </h3>
+                    <p class="text-gray-400">Rejoignez notre communauté sportive et vivez votre passion du sport dans un cadre convivial et dynamique.</p>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="space-y-2">
+                            <a href="index.html" class="block text-gray-400 hover:text-white">Accueil</a>
+                            <a href="activities.html" class="block text-gray-400 hover:text-white">Activités</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="planning.html" class="block text-gray-400 hover:text-white">Planning</a>
+                            <a href="teams.html" class="block text-gray-400 hover:text-white">Équipes</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="news.html" class="block text-gray-400 hover:text-white">Actualités</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Phoenix Sports Club. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

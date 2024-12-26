@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Club Sportif Dynamique</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <svg style="width:30px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" fill="#2563EB" />
+                        <circle cx="100" cy="100" r="85" fill="white" />
+                        <circle cx="100" cy="100" r="80" fill="#2563EB" />
+                        <path d="M100 40 L115 85 L160 85 L125 115 L140 160 L100 130 L60 160 L75 115 L40 85 L85 85 Z" fill="white" />
+                        <circle cx="100" cy="100" r="15" fill="white" />
+                    </svg>
+                    <span class="ml-3 text-xl font-bold">Phoenix Sports Club</span>
+                </div>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition-colors">Accueil</a>
+                    <a href="activities.html" class="hover:text-blue-200 transition-colors">Activités</a>
+                    <a href="planning.html" class="hover:text-blue-200 transition-colors">Planning</a>
+                    <a href="teams.html" class="hover:text-blue-200 transition-colors">Équipes</a>
+                    <a href="news.html" class="hover:text-blue-200 transition-colors">Actualités</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+
+                <button class="md:hidden mobile-menu-button focus:outline-none" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="hamburger" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu md:hidden hidden">
+                <div class="py-4 space-y-3">
+                    <a href="index.html" class="block py-2 hover:text-blue-200 transition-colors">Accueil</a>
+                    <a href="activities.html" class="block py-2 hover:text-blue-200 transition-colors">Activités</a>
+                    <a href="planning.html" class="block py-2 hover:text-blue-200 transition-colors">Planning</a>
+                    <a href="teams.html" class="block py-2 hover:text-blue-200 transition-colors">Équipes</a>
+                    <a href="news.html" class="block py-2 hover:text-blue-200 transition-colors">Actualités</a>
+                    <a href="contact.html" class="block py-2 hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Actualités du Club</h1>
+            <p class="text-xl">Restez informé des dernières nouvelles et événements</p>
+        </div>
+    </header>
+
+    <section class="py-8 bg-white shadow">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap gap-4 items-center justify-center">
+                <button class="px-6 py-2 bg-blue-600 text-white rounded-full">Toutes les actualités</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Résultats</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Événements</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Club</button>
+                <button class="px-6 py-2 bg-gray-200 rounded-full hover:bg-gray-300">Formation</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-2/3">
+                        <img src="images/victory.png" alt="Victoire équipe première" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/3 p-8">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm mb-4">À la une</span>
+                        <h2 class="text-3xl font-bold mb-4">Victoire historique de notre équipe première !</h2>
+                        <p class="text-gray-600 mb-6">Une performance exceptionnelle qui nous rapproche de la montée en division supérieure. Revivez les moments forts de ce match crucial.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-6">
+                            <span>24 décembre 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Football</span>
+                        </div>
+                        <a href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Actualités Récentes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/athletics.jpg" alt="Stage de Noël" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm mb-4">Événement</span>
+                        <h3 class="text-xl font-bold mb-3">Stage de Noël : les inscriptions sont ouvertes !</h3>
+                        <p class="text-gray-600 mb-4">Préparez les vacances de vos enfants avec notre stage multisports du 26 au 30 décembre.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>23 décembre 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Formation</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/athletics_throwing.jpg" alt="Nouveaux équipements" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm mb-4">Club</span>
+                        <h3 class="text-xl font-bold mb-3">De nouveaux équipements pour nos athlètes</h3>
+                        <p class="text-gray-600 mb-4">Le club investit dans du matériel dernière génération pour optimiser les performances.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>22 décembre 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Infrastructure</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="images/basketball_seniors.jpg" alt="Résultats weekend" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm mb-4">Résultats</span>
+                        <h3 class="text-xl font-bold mb-3">Résultats du week-end : un bilan positif</h3>
+                        <p class="text-gray-600 mb-4">Retour sur les performances de nos équipes lors du dernier week-end de compétition.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>21 décembre 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Compétition</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">Lire la suite →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Résultats du Week-end</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="space-y-6">
+                    <!-- Match 1 -->
+                    <div class="border-b pb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm text-gray-500">Football - Seniors R1</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Victoire</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-bold">CS Dynamique</span>
+                                <span class="text-2xl font-bold text-blue-600">3 - 1</span>
+                                <span class="font-bold">FC Visiteur</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match 2 -->
+                    <div class="border-b pb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm text-gray-500">Basketball - U17 Elite</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Victoire</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-bold">AS Extérieur</span>
+                                <span class="text-2xl font-bold text-blue-600">67 - 82</span>
+                                <span class="font-bold">CS Dynamique</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Match 3 -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm text-gray-500">Football - U15 R2</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Défaite</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-bold">CS Dynamique</span>
+                                <span class="text-2xl font-bold text-blue-600">1 - 2</span>
+                                <span class="font-bold">US Local</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Événements à Venir</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Événement 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-lg p-3 text-center min-w-[80px]">
+                            <div class="text-2xl font-bold">26</div>
+                            <div class="text-sm">DÉC</div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Stage de Noël Multisports</h3>
+                            <p class="text-gray-600 mb-2">Une semaine de sport et de fun pour les 6-12 ans !</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>9h00 - 17h00</span>
+                                <span class="mx-2">•</span>
+                                <span>Complexe sportif</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-lg p-3 text-center min-w-[80px]">
+                            <div class="text-2xl font-bold">30</div>
+                            <div class="text-sm">DÉC</div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Match Gala de Fin d'Année</h3>
+                            <p class="text-gray-600 mb-2">Rencontre amicale entre anciens et actuels joueurs du club</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span>19h30</span>
+                                <span class="mx-2">•</span>
+                                <span>Stade principal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Restez informé</h2>
+            <p class="text-xl mb-8">Inscrivez-vous à notre newsletter pour ne rien manquer de l'actualité du club</p>
+            <div class="max-w-md mx-auto">
+                <form class="flex gap-4">
+                    <input type="email" placeholder="Votre email" class="flex-1 px-4 py-2 rounded-lg text-gray-900">
+                    <button class="px-6 py-2 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100">
+                        S'inscrire
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <svg style="width:30px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="90" fill="#2563EB" />
+                            <circle cx="100" cy="100" r="85" fill="white" />
+                            <circle cx="100" cy="100" r="80" fill="#2563EB" />
+                            
+                            <path d="M100 40 L115 85 L160 85 L125 115 L140 160 L100 130 L60 160 L75 115 L40 85 L85 85 Z" fill="white" />
+                            
+                            <circle cx="100" cy="100" r="15" fill="white" />
+                        </svg>
+                        Phoenix Sports Club
+                    </h3>
+                    <p class="text-gray-400">Rejoignez notre communauté sportive et vivez votre passion du sport dans un cadre convivial et dynamique.</p>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="space-y-2">
+                            <a href="index.html" class="block text-gray-400 hover:text-white">Accueil</a>
+                            <a href="activities.html" class="block text-gray-400 hover:text-white">Activités</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="planning.html" class="block text-gray-400 hover:text-white">Planning</a>
+                            <a href="teams.html" class="block text-gray-400 hover:text-white">Équipes</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="news.html" class="block text-gray-400 hover:text-white">Actualités</a>
+                            <a href="contact.html" class="block text-gray-400 hover:text-white">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Phoenix Sports Club. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
